@@ -84,7 +84,7 @@ const allRegions = amexGlobalCodes.regions.all(true);
 
 ```javascript
 // Use ISO Country Numbers. For example, 826 is the country code for United Kingdom
-amexGlobalCodes.regions.byCountryISONumber("826");
+amexGlobalCodes.regions.byCountryISONumber('826');
 
 /**
  * output example:
@@ -109,7 +109,7 @@ amexGlobalCodes.regions.byCountryISONumber("826");
  **/
 
 // if you don't want to include the country itself, you can exclude countries
-amexGlobalCodes.regions.byCountryISONumber("826", true);
+amexGlobalCodes.regions.byCountryISONumber('826', true);
 /**
  * output example:
  * [ { countryCode: '826',
@@ -145,15 +145,15 @@ This function is essentially just to save you from including [right-pad](https:/
 
 ```javascript
 // RHONE-ALPES
-amexGlobalCodes.regions.formatRegionCode("V");
+amexGlobalCodes.regions.formatRegionCode('V');
 // output: "V  "
 
 // BOUENZA
-amexGlobalCodes.regions.formatRegionCode("11");
+amexGlobalCodes.regions.formatRegionCode('11');
 // output: "11 "
 
 // MOSKVA
-amexGlobalCodes.regions.formatRegionCode("MOW");
+amexGlobalCodes.regions.formatRegionCode('MOW');
 // output: "MOW"
 ```
 
