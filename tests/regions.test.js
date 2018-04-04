@@ -16,7 +16,7 @@ describe("## Regions", () => {
 
     const afghanistan = _.findWhere(regions, { regionCode: "AF" });
     expect(afghanistan).to.be.an("object");
-    expect(afghanistan.isCountry).to.equal("TRUE");
+    expect(afghanistan.isCountry).to.equal(true);
     expect(afghanistan.countryCode).to.equal("004");
   });
 
@@ -34,13 +34,45 @@ describe("## Regions", () => {
   });
 
   it("should list regions filtered by country's ISO number", () => {
-    const gbRegions = lib.regions.byCountryISONumber("826");
-    expect(gbRegions).to.be.an("array");
-    expect(gbRegions.length).to.equal(231);
+    const regions = lib.regions.byCountryISONumber("826");
+
+    expect(regions).to.be.an("array");
+    expect(regions.length).to.equal(231);
+
+    const greatBritain = _.findWhere(regions, { regionCode: "GB" });
+    expect(greatBritain).to.be.an("object");
+    expect(greatBritain.isCountry).to.equal(true);
+    expect(greatBritain.countryCode).to.equal("826");
+  });
+
+  it("should list regions filtered by country's ISO number, excluding countries", () => {
+    const regions = lib.regions.byCountryISONumber("826", true);
+
+    expect(regions).to.be.an("array");
+    expect(regions.length).to.equal(230);
+
+    const greatBritain = _.findWhere(regions, { regionCode: "GB" });
+    expect(greatBritain).not.to.be.an("object");
+    expect(greatBritain).to.be.undefined;
   });
 
   it("should format one byte region codes with appropriate padding", () => {
     const test = lib.regions.formatRegionCode("V"); // RHONE-ALPES
+    expect(test).to.equal("V  ");
+  });
+
+  it("should format two byte region codes with appropriate padding", () => {
+    const test = lib.regions.formatRegionCode("11"); // BOUENZA
+    expect(test).to.equal("11 ");
+  });
+
+  it("should format three byte region codes with appropriate padding", () => {
+    const test = lib.regions.formatRegionCode("MOW"); // MOSKVA
+    expect(test).to.equal("MOW");
+  });
+
+  it("should ensure region codes are uppercased", () => {
+    const test = lib.regions.formatRegionCode("v"); // RHONE-ALPES
     expect(test).to.equal("V  ");
   });
 });
