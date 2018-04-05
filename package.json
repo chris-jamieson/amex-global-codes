@@ -1,6 +1,6 @@
 {
   "name": "amex-global-codes",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "index.js",
   "repository": "https://github.com/jamiesoncj/amex-global-codes",
   "author": "Chris Jamieson",
@@ -15,14 +15,17 @@
     "pretty-quick": "^1.4.1"
   },
   "scripts": {
-    "test": "cross-env NODE_ENV=test ./node_modules/.bin/mocha --ui bdd --reporter spec --colors --compilers js:babel-core/register tests --recursive",
-    "test:coverage": "cross-env NODE_ENV=test ./node_modules/.bin/istanbul cover _mocha -- --ui bdd --reporter spec --colors --compilers js:babel-core/register tests --recursive",
+    "test":
+      "cross-env NODE_ENV=test ./node_modules/.bin/mocha --ui bdd --reporter spec --colors --compilers js:babel-core/register tests --recursive",
+    "test:coverage":
+      "cross-env NODE_ENV=test ./node_modules/.bin/istanbul cover _mocha -- --ui bdd --reporter spec --colors --compilers js:babel-core/register tests --recursive",
     "test:watch": "yarn test -- --watch",
     "test:check-coverage": "yarn test:coverage && istanbul check-coverage",
     "report-coverage": "coveralls < ./coverage/lcov.info",
     "precommit": "pretty-quick --staged"
   },
   "dependencies": {
+    "country-code-lookup": "^0.0.9",
     "right-pad": "^1.0.1",
     "underscore": "^1.8.3"
   }

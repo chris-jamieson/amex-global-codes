@@ -34,7 +34,7 @@ describe('## Regions', () => {
   });
 
   it("should list regions filtered by country's ISO number", () => {
-    const regions = lib.regions.byCountryISONumber('826');
+    const regions = lib.regions.byCountryIsoCode('826');
 
     expect(regions).to.be.an('array');
     expect(regions.length).to.equal(231);
@@ -46,7 +46,7 @@ describe('## Regions', () => {
   });
 
   it("should list regions filtered by country's ISO number, excluding countries", () => {
-    const regions = lib.regions.byCountryISONumber('826', true);
+    const regions = lib.regions.byCountryIsoCode('826', true);
 
     expect(regions).to.be.an('array');
     expect(regions.length).to.equal(230);
@@ -54,6 +54,30 @@ describe('## Regions', () => {
     const greatBritain = _.findWhere(regions, { regionCode: 'GB' });
     expect(greatBritain).not.to.be.an('object');
     expect(greatBritain).to.be.undefined;
+  });
+
+  it("should list regions filtered by country's ISO alpha 2 code", () => {
+    const regions = lib.regions.byCountryIsoCode('gb');
+
+    expect(regions).to.be.an('array');
+    expect(regions.length).to.equal(231);
+
+    const greatBritain = _.findWhere(regions, { regionCode: 'GB' });
+    expect(greatBritain).to.be.an('object');
+    expect(greatBritain.isCountry).to.equal(true);
+    expect(greatBritain.countryCode).to.equal('826');
+  });
+
+  it("should list regions filtered by country's ISO alpha 3 code", () => {
+    const regions = lib.regions.byCountryIsoCode('gbr');
+
+    expect(regions).to.be.an('array');
+    expect(regions.length).to.equal(231);
+
+    const greatBritain = _.findWhere(regions, { regionCode: 'GB' });
+    expect(greatBritain).to.be.an('object');
+    expect(greatBritain.isCountry).to.equal(true);
+    expect(greatBritain.countryCode).to.equal('826');
   });
 
   it('should format one byte region codes with appropriate padding', () => {
