@@ -235,6 +235,10 @@ core-js@^2.4.0, core-js@^2.5.0:
   version "2.5.4"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.4.tgz#f2c8bf181f2a80b92f360121429ce63a2f0aeae0"
 
+country-code-lookup@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/country-code-lookup/-/country-code-lookup-0.0.9.tgz#82610251dd9fd5cc5d8f473b65d9f600a0a98759"
+
 cross-env@^5.1.4:
   version "5.1.4"
   resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-5.1.4.tgz#f61c14291f7cc653bb86457002ea80a04699d022"

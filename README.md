@@ -80,11 +80,15 @@ const allRegions = amexGlobalCodes.regions.all(true);
 
 ##### List all regions for a single country
 
-`amexGlobalCodes.regions.byCountryNumber(countryNumber, excludeCountries);`
+`amexGlobalCodes.regions.byCountryIsoCode(countryNumber, excludeCountries);`
 
 ```javascript
-// Use ISO Country Numbers. For example, 826 is the country code for United Kingdom
-amexGlobalCodes.regions.byCountryISONumber('826');
+// Use ISO Country Numbers, ISO alpha2 codes or ISO alpha3 codes (case insensitive). The examples below are for United Kingdom
+amexGlobalCodes.regions.byCountryIsoCode('826'); // ISO number
+amexGlobalCodes.regions.byCountryIsoCode('gb'); // ISO alpha 2
+amexGlobalCodes.regions.byCountryIsoCode('GB'); // ISO alpha 2 (uppercase)
+amexGlobalCodes.regions.byCountryIsoCode('gbr'); // ISO alpha 3
+amexGlobalCodes.regions.byCountryIsoCode('GBR'); // // ISO alpha 3 (uppercase)
 
 /**
  * output example:
@@ -109,7 +113,9 @@ amexGlobalCodes.regions.byCountryISONumber('826');
  **/
 
 // if you don't want to include the country itself, you can exclude countries
-amexGlobalCodes.regions.byCountryISONumber('826', true);
+// beware - countries with no subregions will return no results if this flag is used
+// e.g. American Samoa, Isle of Man etc.
+amexGlobalCodes.regions.byCountryIsoCode('826', true);
 /**
  * output example:
  * [ { countryCode: '826',
