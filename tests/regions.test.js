@@ -45,6 +45,18 @@ describe('## Regions', () => {
     expect(greatBritain.countryCode).to.equal('826');
   });
 
+  it('should handle Jersey', () => {
+    const regions = lib.regions.byCountryIsoCode('JE');
+
+    expect(regions).to.be.an('array');
+    expect(regions.length).to.equal(1);
+
+    const jersey = _.findWhere(regions, { regionCode: 'JE' });
+    expect(jersey).to.be.an('object');
+    expect(jersey.isCountry).to.equal(true);
+    expect(jersey.countryCode).to.equal('832');
+  });
+
   it("should list regions filtered by country's ISO number, excluding countries", () => {
     const regions = lib.regions.byCountryIsoCode('826', true);
 
