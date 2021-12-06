@@ -12,7 +12,7 @@ describe('## Regions', () => {
     const regions = lib.regions.all();
 
     expect(regions).to.be.an('array');
-    expect(regions.length).to.equal(4596);
+    expect(regions.length).to.equal(4582);
 
     const afghanistan = _.findWhere(regions, { regionCode: 'AF' });
     expect(afghanistan).to.be.an('object');
@@ -24,7 +24,7 @@ describe('## Regions', () => {
     const regions = lib.regions.all(true);
 
     expect(regions).to.be.an('array');
-    expect(regions.length).to.equal(4359);
+    expect(regions.length).to.equal(4345);
     const afghanistan = _.findWhere(regions, {
       regionCode: 'AF',
       counrtyCode: '004',
@@ -37,7 +37,7 @@ describe('## Regions', () => {
     const regions = lib.regions.byCountryIsoCode('826');
 
     expect(regions).to.be.an('array');
-    expect(regions.length).to.equal(231);
+    expect(regions.length).to.equal(217);
 
     const greatBritain = _.findWhere(regions, { regionCode: 'GB' });
     expect(greatBritain).to.be.an('object');
@@ -61,7 +61,7 @@ describe('## Regions', () => {
     const regions = lib.regions.byCountryIsoCode('826', true);
 
     expect(regions).to.be.an('array');
-    expect(regions.length).to.equal(230);
+    expect(regions.length).to.equal(216);
 
     const greatBritain = _.findWhere(regions, { regionCode: 'GB' });
     expect(greatBritain).not.to.be.an('object');
@@ -72,7 +72,7 @@ describe('## Regions', () => {
     const regions = lib.regions.byCountryIsoCode('gb');
 
     expect(regions).to.be.an('array');
-    expect(regions.length).to.equal(231);
+    expect(regions.length).to.equal(217);
 
     const greatBritain = _.findWhere(regions, { regionCode: 'GB' });
     expect(greatBritain).to.be.an('object');
@@ -84,7 +84,7 @@ describe('## Regions', () => {
     const regions = lib.regions.byCountryIsoCode('gbr');
 
     expect(regions).to.be.an('array');
-    expect(regions.length).to.equal(231);
+    expect(regions.length).to.equal(217);
 
     const greatBritain = _.findWhere(regions, { regionCode: 'GB' });
     expect(greatBritain).to.be.an('object');
