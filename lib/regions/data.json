@@ -24775,14 +24775,14 @@
   },
   {
     "countryCode": "826",
-    "name": "ANTRIM",
-    "regionCode": "ANT",
+    "name": "ANTRIM AND NEWTOWNABBEY",
+    "regionCode": "ANN",
     "isCountry": false
   },
   {
     "countryCode": "826",
-    "name": "ARDS",
-    "regionCode": "ARD",
+    "name": "ARDS AND NORTH DOWN",
+    "regionCode": "AND",
     "isCountry": false
   },
   {
@@ -24793,26 +24793,8 @@
   },
   {
     "countryCode": "826",
-    "name": "ARMAGH",
-    "regionCode": "ARM",
-    "isCountry": false
-  },
-  {
-    "countryCode": "826",
-    "name": "BALLYMENA",
-    "regionCode": "BLA",
-    "isCountry": false
-  },
-  {
-    "countryCode": "826",
-    "name": "BALLYMONEY",
-    "regionCode": "BLY",
-    "isCountry": false
-  },
-  {
-    "countryCode": "826",
-    "name": "BANBRIDGE",
-    "regionCode": "BNB",
+    "name": "ARMAGH CITY, BANBRIDGE AND CRAIGAVON",
+    "regionCode": "ABC",
     "isCountry": false
   },
   {
@@ -24889,8 +24871,8 @@
   },
   {
     "countryCode": "826",
-    "name": "BOURNEMOUTH",
-    "regionCode": "BMH",
+    "name": "BOURNEMOUTH, CHRISTCHURCH AND POOLE",
+    "regionCode": "BCP",
     "isCountry": false
   },
   {
@@ -24985,14 +24967,14 @@
   },
   {
     "countryCode": "826",
-    "name": "CARRICKFERGUS",
-    "regionCode": "CKF",
+    "name": "CAUSEWAY COAST AND GLENS",
+    "regionCode": "CCG",
     "isCountry": false
   },
   {
     "countryCode": "826",
-    "name": "CASTLEREAGH",
-    "regionCode": "CSR",
+    "name": "CENTRAL BEDFORDSHIRE",
+    "regionCode": "CBF",
     "isCountry": false
   },
   {
@@ -25003,8 +24985,14 @@
   },
   {
     "countryCode": "826",
-    "name": "CHESHIRE",
-    "regionCode": "CHS",
+    "name": "CHESHIRE EAST",
+    "regionCode": "CHE",
+    "isCountry": false
+  },
+  {
+    "countryCode": "826",
+    "name": "CHESHIRE WEST AND CHESTER",
+    "regionCode": "CHW",
     "isCountry": false
   },
   {
@@ -25015,20 +25003,8 @@
   },
   {
     "countryCode": "826",
-    "name": "COLERAINE",
-    "regionCode": "CLR",
-    "isCountry": false
-  },
-  {
-    "countryCode": "826",
     "name": "CONWY",
     "regionCode": "CWY",
-    "isCountry": false
-  },
-  {
-    "countryCode": "826",
-    "name": "COOKSTOWN",
-    "regionCode": "CKT",
     "isCountry": false
   },
   {
@@ -25041,12 +25017,6 @@
     "countryCode": "826",
     "name": "COVENTRY",
     "regionCode": "COV",
-    "isCountry": false
-  },
-  {
-    "countryCode": "826",
-    "name": "CRAIGAVON",
-    "regionCode": "CGV",
     "isCountry": false
   },
   {
@@ -25087,8 +25057,8 @@
   },
   {
     "countryCode": "826",
-    "name": "DERRY",
-    "regionCode": "DRY",
+    "name": "DERRY AND STRABANE",
+    "regionCode": "DRS",
     "isCountry": false
   },
   {
@@ -25111,12 +25081,6 @@
   },
   {
     "countryCode": "826",
-    "name": "DOWN",
-    "regionCode": "DOW",
-    "isCountry": false
-  },
-  {
-    "countryCode": "826",
     "name": "DUDLEY",
     "regionCode": "DUD",
     "isCountry": false
@@ -25131,12 +25095,6 @@
     "countryCode": "826",
     "name": "DUNDEE CITY",
     "regionCode": "DND",
-    "isCountry": false
-  },
-  {
-    "countryCode": "826",
-    "name": "DUNGANNON",
-    "regionCode": "DGN",
     "isCountry": false
   },
   {
@@ -25219,8 +25177,8 @@
   },
   {
     "countryCode": "826",
-    "name": "FERMANAGH",
-    "regionCode": "FER",
+    "name": "FERMANAGH AND OMAGH",
+    "regionCode": "FMO",
     "isCountry": false
   },
   {
@@ -25423,12 +25381,6 @@
   },
   {
     "countryCode": "826",
-    "name": "LARNE",
-    "regionCode": "LRN",
-    "isCountry": false
-  },
-  {
-    "countryCode": "826",
     "name": "LEEDS",
     "regionCode": "LDS",
     "isCountry": false
@@ -25453,20 +25405,14 @@
   },
   {
     "countryCode": "826",
-    "name": "LIMAVADY",
-    "regionCode": "LMV",
-    "isCountry": false
-  },
-  {
-    "countryCode": "826",
     "name": "LINCOLNSHIRE",
     "regionCode": "LIN",
     "isCountry": false
   },
   {
     "countryCode": "826",
-    "name": "LISBURN",
-    "regionCode": "LSB",
+    "name": "LISBURN AND CASTLEREAGH",
+    "regionCode": "LBC",
     "isCountry": false
   },
   {
@@ -25485,12 +25431,6 @@
     "countryCode": "826",
     "name": "LUTON",
     "regionCode": "LUT",
-    "isCountry": false
-  },
-  {
-    "countryCode": "826",
-    "name": "MAGHERAFELT",
-    "regionCode": "MFT",
     "isCountry": false
   },
   {
@@ -25519,6 +25459,12 @@
   },
   {
     "countryCode": "826",
+    "name": "MID AND EAST ANTRIM",
+    "regionCode": "MEA",
+    "isCountry": false
+  },
+  {
+    "countryCode": "826",
     "name": "MIDDLESBROUGH",
     "regionCode": "MDB",
     "isCountry": false
@@ -25527,6 +25473,12 @@
     "countryCode": "826",
     "name": "MIDLOTHIAN",
     "regionCode": "MLN",
+    "isCountry": false
+  },
+  {
+    "countryCode": "826",
+    "name": "MID-ULSTER",
+    "regionCode": "MUL",
     "isCountry": false
   },
   {
@@ -25545,12 +25497,6 @@
     "countryCode": "826",
     "name": "MORAY",
     "regionCode": "MRY",
-    "isCountry": false
-  },
-  {
-    "countryCode": "826",
-    "name": "MOYLE",
-    "regionCode": "MYL",
     "isCountry": false
   },
   {
@@ -25579,14 +25525,8 @@
   },
   {
     "countryCode": "826",
-    "name": "NEWRY AND MOURNE",
-    "regionCode": "NYM",
-    "isCountry": false
-  },
-  {
-    "countryCode": "826",
-    "name": "NEWTOWNABBEY",
-    "regionCode": "NTA",
+    "name": "NEWRY, MOURNE AND DOWN",
+    "regionCode": "NMD",
     "isCountry": false
   },
   {
@@ -25599,12 +25539,6 @@
     "countryCode": "826",
     "name": "NORTH AYRSHIRE",
     "regionCode": "NAY",
-    "isCountry": false
-  },
-  {
-    "countryCode": "826",
-    "name": "NORTH DOWN",
-    "regionCode": "NDN",
     "isCountry": false
   },
   {
@@ -25675,12 +25609,6 @@
   },
   {
     "countryCode": "826",
-    "name": "OMAGH",
-    "regionCode": "OMH",
-    "isCountry": false
-  },
-  {
-    "countryCode": "826",
     "name": "ORKNEY ISLANDS",
     "regionCode": "ORK",
     "isCountry": false
@@ -25713,12 +25641,6 @@
     "countryCode": "826",
     "name": "PLYMOUTH",
     "regionCode": "PLY",
-    "isCountry": false
-  },
-  {
-    "countryCode": "826",
-    "name": "POOLE",
-    "regionCode": "POL",
     "isCountry": false
   },
   {
@@ -25923,12 +25845,6 @@
     "countryCode": "826",
     "name": "STOKE-ON-TRENT",
     "regionCode": "STE",
-    "isCountry": false
-  },
-  {
-    "countryCode": "826",
-    "name": "STRABANE",
-    "regionCode": "STB",
     "isCountry": false
   },
   {
