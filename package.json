@@ -11,7 +11,8 @@
     "husky": "6.0.0",
     "mocha": "8.4.0",
     "pretty": "2.0.0",
-    "pretty-quick": "3.1.0"
+    "pretty-quick": "3.1.0",
+    "simplify-geojson": "^1.0.4"
   },
   "scripts": {
     "test": "cross-env NODE_ENV=test ./node_modules/.bin/mocha --ui bdd --reporter spec --colors tests --recursive",
