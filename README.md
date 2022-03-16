@@ -78,6 +78,20 @@ const allRegions = amexGlobalCodes.regions.all(true);
  **/
 ```
 
+##### List all regions which a point falls within
+
+NOTE: currently GeoJSON definitions are _only_ provided for the United Kingdom.
+
+```javascript
+// Falmouth
+const lat = '50.156010';
+const lon = '-5.071080';
+
+const regions = await lib.regions.findRegionsForGeoPoint(lat, lon, 'GB');
+
+// regions[0].name === 'CORNWALL'
+```
+
 ##### List all regions for a single country
 
 `amexGlobalCodes.regions.byCountryIsoCode(countryNumber, excludeCountries);`
@@ -163,6 +177,12 @@ amexGlobalCodes.regions.formatRegionCode('MOW');
 // output: "MOW"
 ```
 
+## Scripts
+
+GeoJSON files can be very detailed and therefore large filesizes. This introduces performance penalties and balloons the size of the library. It is recommended to run the `scripts/simplify-geojson.js` script after adding or modifying GeoJSON files.
+
+Note that the TOLERANCE variable in the script file can be specified as needed.
+
 ## Not yet included (TODO)
 
 ### Country Codes
@@ -176,3 +196,7 @@ amexGlobalCodes.regions.formatRegionCode('MOW');
 Pull Requests are welcome!
 
 Please ensure a test is included (see `tests` directory for examples). These can be run using `yarn test` or `yarn test:watch`.
+
+## Notes
+
+GeoJSON definitions adapted from [findthatpostcode](https://findthatpostcode.uk/) and [martinjc's GeoJSON collection](https://github.com/martinjc/UK-GeoJSON).
