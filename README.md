@@ -196,3 +196,7 @@ Note that the TOLERANCE variable in the script file can be specified as needed.
 Pull Requests are welcome!
 
 Please ensure a test is included (see `tests` directory for examples). These can be run using `yarn test` or `yarn test:watch`.
+
+## Notes
+
+GeoJSON definitions adapted from [findthatpostcode](https://findthatpostcode.uk/) and [martinjc's GeoJSON collection](https://github.com/martinjc/UK-GeoJSON).
