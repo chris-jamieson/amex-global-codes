@@ -76,6 +76,24 @@ describe('## Geolocation of regions for points', () => {
       .catch(done);
   });
 
+  it('should identify regions where a point exists - KINGSTON UPON HULL, CITY OF', (done) => {
+    // KINGSTON UPON HULL
+    const lat = '53.783939';
+    const lon = '-0.367090';
+
+    lib.regions
+      .findRegionsForGeoPoint(lat, lon, 'GB')
+      .then((regions) => {
+        expect(regions).to.be.an('array');
+        expect(regions.length).to.equal(1);
+        expect(regions[0]).to.be.an('object');
+        expect(regions[0].name).to.equal('KINGSTON UPON HULL, CITY OF');
+        expect(regions[0].regionCode).to.equal('KHL');
+        return done();
+      })
+      .catch(done);
+  });
+
   it('should return empty array when no region exists for the point', (done) => {
     // in France
     const lat = '48.149138';
