@@ -1,28 +1,32 @@
-const path = require('path');
-const humanize = require('humanize-string');
-const { readFile, writeFile } = require('fs/promises');
+const { isBrowser, isNode } = require('browser-or-node');
 
-async function main() {
-  const p = path.join(__dirname, '..', 'lib', 'regions', 'data.json');
+if (isBrowser) {
+  console.error('Script cannot be run in browser environment');
+} else {
+  const path = require('path');
+  const humanize = require('humanize-string');
+  const { readFile, writeFile } = require('fs/promises');
 
-  console.log('p:', p);
-  const regions = JSON.parse(await readFile(p));
+  async function main() {
+    const p = path.join(__dirname, '..', 'lib', 'regions', 'data.json');
 
-  console.log('regions[0]: ', regions[0]);
-  const formatted = [];
-  regions.forEach((region) => {
-    region.formattedName = humanize(region.name);
-    formatted.push(region);
-  });
+    const regions = JSON.parse(await readFile(p));
 
-  // all done, write the file
-  await writeFile(p, JSON.stringify(formatted, null, 2));
-  return null;
+    const formatted = [];
+    regions.forEach((region) => {
+      region.formattedName = humanize(region.name);
+      formatted.push(region);
+    });
+
+    // all done, write the file
+    await writeFile(p, JSON.stringify(formatted, null, 2));
+    return null;
+  }
+
+  main()
+    .then(() => console.log('Done'))
+    .catch((err) => {
+      console.error('Error: ', err.message);
+      process.exit(1);
+    });
 }
-
-main()
-  .then(() => console.log('Done'))
-  .catch((err) => {
-    console.error('Error: ', err.message);
-    process.exit(1);
-  });
