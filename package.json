@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "country-code-lookup": "0.0.19",
+    "humanize-string": "2.1.0",
     "point-in-geopolygon": "^1.0.1",
     "right-pad": "1.0.1",
     "underscore": "1.13.1"
