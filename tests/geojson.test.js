@@ -94,6 +94,24 @@ describe('## Geolocation of regions for points', () => {
       .catch(done);
   });
 
+  it('should identify regions where a point exists - Kent (Canterbury)', (done) => {
+    // KENT
+    const lat = '51.288694';
+    const lon = '1.103886';
+
+    lib.regions
+      .findRegionsForGeoPoint(lat, lon, 'GB')
+      .then((regions) => {
+        expect(regions).to.be.an('array');
+        expect(regions.length).to.equal(1);
+        expect(regions[0]).to.be.an('object');
+        expect(regions[0].name).to.equal('KENT');
+        expect(regions[0].regionCode).to.equal('KEN');
+        return done();
+      })
+      .catch(done);
+  });
+
   it('should return empty array when no region exists for the point', (done) => {
     // in France
     const lat = '48.149138';
