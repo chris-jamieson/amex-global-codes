@@ -29086,7 +29086,7 @@
   },
   {
     "countryCode": "826",
-    "name": "CAERPHILLY (CAERFFILI)",
+    "name": "CAERPHILLY (CAERFFILI GB-CAF)",
     "regionCode": "CAY",
     "isCountry": false,
     "formattedName": "Caerphilly (Caerffili)"
@@ -29114,14 +29114,14 @@
   },
   {
     "countryCode": "826",
-    "name": "CARDIFF (CAERDYDD CRD)",
+    "name": "CARDIFF (CAERDYDD CRD GB-CRD)",
     "regionCode": "CRF",
     "isCountry": false,
     "formattedName": "Cardiff (Caerdydd Crd)"
   },
   {
     "countryCode": "826",
-    "name": "CARMARTHENSHIRE (SIR GAERFYRDDIN)",
+    "name": "CARMARTHENSHIRE (SIR GAERFYRDDIN GB-GFY)",
     "regionCode": "CMN",
     "isCountry": false,
     "formattedName": "Carmarthenshire (Sir Gaerfyrddin)"
@@ -29212,7 +29212,7 @@
   },
   {
     "countryCode": "826",
-    "name": "DENBIGHSHIRE (SIR DDINBYCH)",
+    "name": "DENBIGHSHIRE (SIR DDINBYCH GB-DDB)",
     "regionCode": "DEN",
     "isCountry": false,
     "formattedName": "Denbighshire (Sir Ddinbych)"
@@ -29387,7 +29387,7 @@
   },
   {
     "countryCode": "826",
-    "name": "FLINTSHIRE (SIR Y FFLINT F)",
+    "name": "FLINTSHIRE (SIR Y FFLINT GB-FFL)",
     "regionCode": "FLN",
     "isCountry": false,
     "formattedName": "Flintshire (Sir y Fflint)"
@@ -29527,7 +29527,7 @@
   },
   {
     "countryCode": "826",
-    "name": "ISLE OF ANGLESEY (SIR YNYS MON)",
+    "name": "ISLE OF ANGLESEY (SIR YNYS MON GB-YMN)",
     "regionCode": "AGY",
     "isCountry": false,
     "formattedName": "Isle of Anglesey (Sir Ynys Mon)"
@@ -29688,7 +29688,7 @@
   },
   {
     "countryCode": "826",
-    "name": "MERTHYR TYDFIL",
+    "name": "MERTHYR TYDFIL (MERTHYR TUDFUL GB-MTU)",
     "regionCode": "MTY",
     "isCountry": false,
     "formattedName": "Merthyr Tydfil"
@@ -29737,7 +29737,7 @@
   },
   {
     "countryCode": "826",
-    "name": "MONMOUTHSHIRE (SIR FYNWY)",
+    "name": "MONMOUTHSHIRE (SIR FYNWY GB-FYN)",
     "regionCode": "MON",
     "isCountry": false,
     "formattedName": "Monmouthshire (Sir Fynwy)"
@@ -29772,7 +29772,7 @@
   },
   {
     "countryCode": "826",
-    "name": "NEWPORT (CASNEWYDD)",
+    "name": "NEWPORT (CASNEWYDD GB-CNW)",
     "regionCode": "NWP",
     "isCountry": false,
     "formattedName": "Newport (Casnewydd)"
@@ -29842,10 +29842,10 @@
   },
   {
     "countryCode": "826",
-    "name": "NORTHAMPTONSHIRE",
-    "regionCode": "NTH",
+    "name": "NORTH NORTHAMPTONSHIRE",
+    "regionCode": "NNH",
     "isCountry": false,
-    "formattedName": "Northamptonshire"
+    "formattedName": "North Northamptonshire"
   },
   {
     "countryCode": "826",
@@ -29891,7 +29891,7 @@
   },
   {
     "countryCode": "826",
-    "name": "PEMBROKESHIRE (SIR BENFRO)",
+    "name": "PEMBROKESHIRE (SIR BENFRO GB-BNF)",
     "regionCode": "PEM",
     "isCountry": false,
     "formattedName": "Pembrokeshire (Sir Benfro)"
@@ -30185,7 +30185,7 @@
   },
   {
     "countryCode": "826",
-    "name": "SWANSEA (ABERTAWE)",
+    "name": "SWANSEA (ABERTAWE GB-ATA)",
     "regionCode": "SWA",
     "isCountry": false,
     "formattedName": "Swansea (Abertawe)"
@@ -30318,6 +30318,13 @@
   },
   {
     "countryCode": "826",
+    "name": "WEST NORTHAMPTONSHIRE",
+    "regionCode": "WNH",
+    "isCountry": false,
+    "formattedName": "West Northamptonshire"
+  },
+  {
+    "countryCode": "826",
     "name": "WEST SUSSEX",
     "regionCode": "WSX",
     "isCountry": false,
@@ -30381,7 +30388,7 @@
   },
   {
     "countryCode": "826",
-    "name": "WREXHAM (WRECSAM)",
+    "name": "WREXHAM (WRECSAM GB-WRC)",
     "regionCode": "WRX",
     "isCountry": false,
     "formattedName": "Wrexham (Wrecsam)"
