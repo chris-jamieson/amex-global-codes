@@ -29821,6 +29821,13 @@
   },
   {
     "countryCode": "826",
+    "name": "NORTH NORTHAMPTONSHIRE",
+    "regionCode": "NNH",
+    "isCountry": false,
+    "formattedName": "North Northamptonshire"
+  },
+  {
+    "countryCode": "826",
     "name": "NORTH SOMERSET",
     "regionCode": "NSM",
     "isCountry": false,
@@ -29839,13 +29846,6 @@
     "regionCode": "NYK",
     "isCountry": false,
     "formattedName": "North Yorkshire"
-  },
-  {
-    "countryCode": "826",
-    "name": "NORTH NORTHAMPTONSHIRE",
-    "regionCode": "NNH",
-    "isCountry": false,
-    "formattedName": "North Northamptonshire"
   },
   {
     "countryCode": "826",
