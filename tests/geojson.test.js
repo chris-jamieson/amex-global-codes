@@ -112,6 +112,26 @@ describe('## Geolocation of regions for points', () => {
       .catch(done);
   });
 
+  it('should identify regions where a point exists - Craigavon, Northern Ireland', (done) => {
+    // Craigavon, Northern Ireland
+    const lat = '54.4471';
+    const lon = '-6.387';
+
+    lib.regions
+      .findRegionsForGeoPoint(lat, lon, 'GB')
+      .then((regions) => {
+        expect(regions).to.be.an('array');
+        expect(regions.length).to.equal(1);
+        expect(regions[0]).to.be.an('object');
+        expect(regions[0].name).to.equal(
+          'ARMAGH CITY, BANBRIDGE AND CRAIGAVON'
+        );
+        expect(regions[0].regionCode).to.equal('ABC');
+        return done();
+      })
+      .catch(done);
+  });
+
   it('should return empty array when no region exists for the point', (done) => {
     // in France
     const lat = '48.149138';
